@@ -51,7 +51,7 @@ class Expense_Tracker:
 
         print("Category-wise Expense Summary:")
         for category, total in category_summary.items():
-            print(f"{category}: ${total:.2f}")
+            print(f"{category}: ₹{total:.2f}")
 
     #Function to view the expense list including all the previos expense
     def ViewExpenses(self):
@@ -82,7 +82,7 @@ class Expense_Tracker:
 
         print("Monthly Expense Summary:")
         for month, total in summary.items():
-            print(f"{month}: ${total:.2f}")
+            print(f"{month}: ₹{total:.2f}")
 
     #Funtion for the user interface so that user can choose different options accordingly
     def user_interface(self):
@@ -113,5 +113,5 @@ class Expense_Tracker:
                 print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
-    tracker = ExpenseTracker()
+    tracker = Expense_Tracker()
     tracker.user_interface()
